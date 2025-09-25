@@ -1307,6 +1307,37 @@
         transform: translateX(5px);
     }
     
+    .certificate-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .certificate-image {
+        flex: 1;
+        min-width: 200px;
+        text-align: center;
+    }
+    
+    .certificate-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .certificate-image img:hover {
+        transform: scale(1.05);
+    }
+    
+    .certificate-image p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+    
     /* Contact Section */
     .contact {
         background-color: var(--bg-color);
@@ -1879,7 +1910,7 @@
                 <div class="hero-text">
                     <h1 style="color: yellowgreen;">Hi, I'm <span>Dinesh Nikam.</span></h1>
                     <div class="typing-container">
-                        <span class="typing-text">Business Analyst | Developer | Problem Solver</span>
+                        <span class="typing-text">Business Analyst|Data Analyst|MIS|Developer|Problem Solver</span>
                         <span class="cursor">&nbsp;</span>
                     </div>
                     <p>Connecting business needs with technical solutions through strategic analysis and innovative thinking.</p>
@@ -1930,61 +1961,97 @@
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-tasks"></i> Core Skills</h3>
+                    <h3><i class="fas fa-tasks"></i> Business Analysis Skills</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <h4>Requirement Gathering & Analysis</h4>
-                            <p>BRD, FRD, User Stories, RTM</p>
+                            <h4>Requirement Gathering & Elicitation</h4>
+                            <p>Interviews, workshops, surveys, document analysis</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Business Process Modeling</h4>
-                            <p>Use Case, Process Flow, UML Diagrams</p>
+                            <h4>BRD, FRD Documentation</h4>
+                            <p>Business requirements, functional specifications</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Wireframing & Prototyping</h4>
-                            <p>UI Mockups, Data Models, Workflow Design</p>
+                            <h4>Business Process Mapping</h4>
+                            <p>As-Is and To-Be process modeling</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Requirement Validation</h4>
-                            <p>Stakeholder Engagement, Test Case Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <h4>Tools</h4>
-                            <p>Jira, Confluence, MS Visio, Draw.io, MS Office</p>
+                            <h4>User Stories</h4>
+                            <p>Agile requirements development and management</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Database</h4>
-                            <p>SQL (Queries, Joins, Data Analysis)</p>
+                            <h4>Stakeholder Communication</h4>
+                            <p>Effective communication across all levels</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Development</h4>
-                            <p>APIs, ASP.NET, SDLC collaboration</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>BI & Analytics</h4>
-                            <p>Power BI (Dashboards, Reporting)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-sitemap"></i> Methodologies</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <h4>Agile</h4>
+                            <h4>Agile Methodologies</h4>
                             <p>Scrum, Sprint Planning, Retrospectives</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Waterfall</h4>
-                            <p>Sequential Design Process, Documentation</p>
+                            <h4>SDLC Models</h4>
+                            <p>Waterfall, Iterative, Spiral development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Tools & Technical Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <h4>MS Office Suite</h4>
+                            <p>Word, Excel, PowerPoint, Google Sheets</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Requirement Traceability</h4>
-                            <p>Change Management, Impact Analysis</p>
+                            <h4>Project Management Tools</h4>
+                            <p>JIRA, Confluence, Trello</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Data Analysis & Visualization</h4>
+                            <p>Power BI, Excel Advanced, Looker</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Database & SQL</h4>
+                            <p>MySQL, SQL Server, SSMS Studio</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Modeling & Diagramming</h4>
+                            <p>Draw.io, Miro, Visio</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Programming</h4>
+                            <p>Python, C#, ASP.NET</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>ETL Tools</h4>
+                            <p>Data extraction, transformation, loading</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Data Analyst Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <h4>Data Analysis</h4>
+                            <p>Statistical analysis, trend identification</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Data Visualization</h4>
+                            <p>Dashboard creation, KPI development</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>SQL & Database Management</h4>
+                            <p>Query optimization, data extraction</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Excel Advanced</h4>
+                            <p>Pivot tables, VLOOKUP, macros, formulas</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Power BI</h4>
+                            <p>Interactive dashboards, DAX, data modeling</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Data Storytelling</h4>
+                            <p>Translating data into actionable insights</p>
                         </div>
                     </div>
                 </div>
@@ -1992,20 +2059,28 @@
                     <h3><i class="fas fa-user-tie"></i> Soft Skills</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <h4>Thinking</h4>
-                            <p>Analytical, Problem-Solving, Critical</p>
+                            <h4>Analytical Thinking</h4>
+                            <p>Problem decomposition, critical analysis</p>
                         </div>
                         <div class="skill-item">
                             <h4>Communication</h4>
-                            <p>Strong Verbal, Written, Presentation</p>
+                            <p>Verbal, written, presentation skills</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Teamwork</h4>
-                            <p>Collaboration, Leadership, Interpersonal</p>
+                            <h4>Adaptability</h4>
+                            <p>Quick learning, flexibility in changing environments</p>
                         </div>
                         <div class="skill-item">
-                            <h4>Management</h4>
-                            <p>Attention to Detail, Client Relationships</p>
+                            <h4>Team Collaboration</h4>
+                            <p>Working effectively in cross-functional teams</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Time Management</h4>
+                            <p>Prioritization, meeting deadlines</p>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Problem Solving</h4>
+                            <p>Creative solutions, root cause analysis</p>
                         </div>
                     </div>
                 </div>
@@ -2021,23 +2096,22 @@
             </div>
             <div class="project-grid">
                 <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
-                        <div class="project-title">Code Builder</div>
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                        <div class="project-title">Coffee Shop Sales Analysis</div>
                     </div>
                     <div class="project-content">
-                        <span class="role">Business Analyst & Developer</span>
-                        <h3>Online Learning Platform</h3>
-                        <p>Online code execution platform for learners to practice and enhance their programming skills.</p>
+                        <span class="role">Business Analyst | Data Analyst & Developer</span>
+                        <h3>Coffee Shop Sales Analysis</h3>
+                        <p>Comprehensive analysis of coffee shop sales data to uncover customer behavior patterns, product performance metrics, and seasonal sales trends.</p>
                         <ul>
-                            <li>Gathered requirements and performed feasibility analysis</li>
-                            <li>Designed system architecture with UML diagrams</li>
-                            <li>Built functional prototypes for validation</li>
-                            <li>Documented full SRS and deployment model</li>
+                            <li>Prepared BA documentation including Project Charter, BRD, FRD, Use Case Diagrams, ERD, and Workflow</li>
+                            <li>Analyzed sales data to identify customer behavior patterns and product performance metrics</li>
+                            <li>Developed interactive Excel dashboard with KPIs, charts, and slicers for real-time decision-making</li>
                         </ul>
                         <div class="project-footer">
-                            <a href="#" class="project-link project-detail-btn" data-project="code-builder">View Details <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="project-link project-detail-btn" data-project="coffee-shop">View Details <i class="fas fa-arrow-right"></i></a>
                             <div class="project-likes">
-                                <button class="like-btn" data-project="code-builder">
+                                <button class="like-btn" data-project="coffee-shop">
                                     <i class="far fa-heart"></i>
                                 </button>
                                 <span class="like-count">0</span>
@@ -2050,14 +2124,14 @@
                         <div class="project-title">Smart Medico</div>
                     </div>
                     <div class="project-content">
-                        <span class="role">Business Analyst & Developer</span>
-                        <h3>Healthcare Management Software</h3>
-                        <p>Comprehensive software solution for healthcare services including patient, appointment, billing, and prescription management.</p>
+                        <span class="role">Business Analyst | Data Analyst & Developer</span>
+                        <h3>Smart Medico – Hospital Management System</h3>
+                        <p>Comprehensive hospital management system analysis to address fragmented data and improve decision-making processes.</p>
                         <ul>
-                            <li>Analyzed requirements for healthcare management</li>
-                            <li>Designed healthcare-specific workflows with UML</li>
-                            <li>Developed UI prototypes for medical professionals</li>
-                            <li>Delivered testing procedures and enhancement roadmap</li>
+                            <li>Prepared BA documentation including Project Charter, BRD, FRD, Use Cases, ERD, Workflow, and Data Requirement Document</li>
+                            <li>Defined the problem of fragmented hospital data and proposed unified dashboard solution</li>
+                            <li>Gathered and analyzed requirements from stakeholders (Management, Finance, Doctors, IT/BI Team)</li>
+                            <li>Built interactive Power BI dashboard with KPIs for Patients, Doctors, Billing, Payments, and Disease Trends</li>
                         </ul>
                         <div class="project-footer">
                             <a href="#" class="project-link project-detail-btn" data-project="smart-medico">View Details <i class="fas fa-arrow-right"></i></a>
@@ -2071,23 +2145,23 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
-                        <div class="project-title">ManagePro</div>
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                        <div class="project-title">Code Builder</div>
                     </div>
                     <div class="project-content">
                         <span class="role">Business Analyst & Developer</span>
-                        <h3>Product Management Web App</h3>
-                        <p>Comprehensive product management solution with real-time dashboards and analytics.</p>
+                        <h3>Code Builder - Online Learning Platform</h3>
+                        <p>Online code execution platform for learners to practice and enhance their programming skills through guided exercises.</p>
                         <ul>
-                            <li>Gathered requirements for product management workflows</li>
-                            <li>Designed wireframes with responsive layouts and dark mode</li>
-                            <li>Optimized database design for performance</li>
-                            <li>Enabled business decision-making with data insights</li>
+                            <li>Gathered requirements and performed feasibility analysis</li>
+                            <li>Designed system architecture with UML diagrams</li>
+                            <li>Built functional prototypes for validation</li>
+                            <li>Documented full SRS and deployment model</li>
                         </ul>
                         <div class="project-footer">
-                            <a href="#" class="project-link project-detail-btn" data-project="managepro">View Details <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="project-link project-detail-btn" data-project="code-builder">View Details <i class="fas fa-arrow-right"></i></a>
                             <div class="project-likes">
-                                <button class="like-btn" data-project="managepro">
+                                <button class="like-btn" data-project="code-builder">
                                     <i class="far fa-heart"></i>
                                 </button>
                                 <span class="like-count">0</span>
@@ -2158,21 +2232,88 @@
                 <div class="education-card">
                     <h3>Professional Certifications</h3>
                     <div class="certifications">
-                        <h4>Business Analysis</h4>
+                        <h4>Featured Certificates</h4>
+                        <div class="certificate-images">
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>UML Certificate<h4></b>
+                                <p>UML: The Most Complete Guide with Real-Life Examples</p>
+                                <p>Udemy | Sept 20, 2025 | 6 hours</p>
+                                <a href="https://drive.google.com/file/d/1ZNK5O_2rVCzOp3OQz6T1YoNMKafYkHzc/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                 <b><h4>Data Analyst Certificate<h4></b>
+                                <p>Data Analyst: Professional Certificate in Data Analysis</p>
+                                <p>Udemy | Sept 19, 2025 | 30 hours</p>
+                                <a href="https://drive.google.com/file/d/1KXhFu8hie07s-87w8uX1ce8UPGtiwmZO/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4> GenAI Certificate<h4></b>
+                                <p>GenAI Powered Data Analytics Job Simulation</p>
+                                <p>TATA & Forage | Sept 19, 2025</p>
+                                <a href="https://drive.google.com/file/d/1EPdNxyv25APKJw3bwgkTGa6JzRJM9-yf/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>Problem Solving Certificate<h4></b>
+                                <p>Mastering Complexity in Problem Solving and Decision Making</p>
+                                <p>Udemy | Sept 19, 2025 | 5 hours</p>
+                                <a href="https://drive.google.com/file/d/1QTbmKuwtN8HchNsSloRQ3vhqG1VUwz1Q/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>Agile Certificate</h4></b> 
+                                <p><h5>Professional Certificate of Agile and Scrum Business Analyst</h5></p>
+                                <p><h5>Udemy | Sept 18, 2025 | 3 hours</h5></p>
+                                <a href="https://drive.google.com/file/d/15xkrtDao3ExXebRPgnUdd0PmtZVH-JZc/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>Power BI Certificate</h4></b>
+                                <p><h5>Power BI Mastery: Zero to Hero Data Skills<h5></p>
+                                <p><h5>Udemy | Sept 11, 2025 | 6.5 hours<h5></p>
+                                <a href="https://drive.google.com/file/d/1acUSVLa1usvbrxwbnQFTGz0qJvS5Vzh1/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>Business Analytics Certificate<h4></b>
+                                <p>Master in Business Analytics for Business Analysts</p>
+                                <p>Udemy | Sept 14, 2025 | 13 hours</p>
+                                <a href="https://drive.google.com/file/d/1etjSOB6zuWUI8xHAyOmAAa0w6_1t6e3u/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>SQL Certificate<h4></b>
+                                <p>Modern SQL for Data Analysts: BigQuery in the AI Era</p>
+                                <p>Udemy | Sept 10, 2025 | 1 hour</p>
+                                <a href="https://drive.google.com/file/d/1rLNCt8G0v3ZhJIxVJWWi0DxTiK2zF7Z_/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                            <div class="certificate-image">
+                                 <div class="skills-container">
+                            <div class="skill-category">
+                                <b><h4>Excel Certificate<h4></b>
+                                <p>Microsoft Excel - Beginner to Advance with Example</p>
+                                <p>Udemy | Sept 9, 2025 | 4.5 hours</p>
+                                <a href="https://drive.google.com/file/d/1ygU9bKpGnCdz24aa_duG7qwp578kDWRt/view?usp=sharing" target="_blank">View Certification</a>
+                            </div>
+                        </div>
+                        <h4>Additional Certifications</h4>
+                         <div class="skills-container">
+                            <div class="skill-category">
                         <ul>
-                            <li>Business Analysis Foundations</li>
-                            <li>Agile Business Analysis</li>
-                            <li>Excel for Business Analysts</li>
-                            <li>Learning AI for Business Analysis</li>
-                        </ul>
-                        <h4>Technical Skills</h4>
-                        <ul>
-                            <li>SQL for Data Analysis</li>
-                            <li>Power BI Essential Training (2024)</li>
-                            <li>Learning Jira (Data Center Edition)</li>
-                            <li>Full Stack Development in ASP.NET</li>
-                            <li>Git from Basics to Advanced</li>
-                            <li>Tally with GST</li>
+                            <li>Data Visualisation: Empowering Business with Effective Insights - TATA<br> <a href="https://drive.google.com/file/d/1WO3GJAf7Q-fGk_73LK3OZKNXO5Y0S4CN/view?usp=sharing" target="_blank">View Certification</a></li>
+                            <li>Data Analytics Job Simulation - Deloitte <br> <a href="https://drive.google.com/file/d/1fOhf9hKZrK04n6NrO1yd2EIkgibcVgvo/view?usp=sharing" target="_blank">View Certification</a></li>
+                            <li>Full Stack Asp.net - IANT Institute <br> <a href="https://drive.google.com/file/d/1jyVxnFYMr8uBLbkZJTICLEWlUxW09OR9/view?usp=sharing" target="_blank">View Certification</a></li>
                         </ul>
                     </div>
                 </div>
@@ -2197,7 +2338,7 @@
                         </div>
                         <div>
                             <i class="fas fa-phone"></i>
-                            <span>+91 7887521586</span>
+                            <span>+91 78########</span>
                         </div>
                         <div>
                             <i class="fas fa-envelope"></i>
@@ -2397,73 +2538,73 @@
         const projectDetailBtns = document.querySelectorAll('.project-detail-btn');
         
         const projectDetails = {
-    'code-builder': {
-        title: 'Code Builder - Online Learning Platform',
-        content: `
-            <h3>Project Overview</h3>
-            <p>Code Builder is an academic project focused on providing an online space for learners to practice programming through guided exercises.</p>
-            
-            <h3>My Role</h3>
-            <p>As a Business Analyst & Developer, I gathered requirements, created system architecture diagrams, and designed UI mockups for validation.</p>
-            
-            <h3>Key Work</h3>
-            <ul>
-                <li>Prepared BRD and FRD documents</li>
-                <li>Designed Use Case and Process Flow diagrams</li>
-                <li>Developed wireframes for coding interface</li>
-            </ul>
-            
-            <div style="margin-top: 20px;">
-                <a href="https://drive.google.com/drive/folders/1LHo5Q9v5VIRVJ_ksJFQWSRtpODqw4GfI?usp=sharing" 
-                   class="btn" target="_blank">View Documentation</a>
-            </div>
-        `
-    },
-    'smart-medico': {
-        title: 'Smart Medico - Healthcare Management Software',
-        content: `
-            <h3>Project Overview</h3>
-            <p>Smart Medico is a healthcare project designed to support clinics with patient management, appointment scheduling, and billing processes.</p>
-            
-            <h3>My Role</h3>
-            <p>I worked as a Business Analyst & Developer, focusing on requirement analysis and workflow design for different healthcare modules.</p>
-            
-            <h3>Key Work</h3>
-            <ul>
-                <li>Gathered and documented requirements from case studies</li>
-                <li>Designed ERD and Activity Diagrams</li>
-                <li>Created UI mockups for appointment and billing modules</li>
-            </ul>
-            
-            <div style="margin-top: 20px;">
-                <a href="https://drive.google.com/drive/folders/1PLoZgncSeJL3fYnKNF1TYFVz6aaeeQAc?usp=sharing" 
-                   class="btn" target="_blank">View Documentation</a>
-            </div>
-        `
-    },
-    'managepro': {
-        title: 'ManagePro - Product Management Web App',
-        content: `
-            <h3>Project Overview</h3>
-            <p>ManagePro is a product management project created as part of my learning. It helps in tracking products, stock levels, and managing basic inventory operations.</p>
-            
-            <h3>My Role</h3>
-            <p>As a Business Analyst & Developer, I focused on requirement documentation, creating wireframes, and defining basic workflows for product management.</p>
-            
-            <h3>Key Work</h3>
-            <ul>
-                <li>Prepared requirement documents (BRD/FRD)</li>
-                <li>Created Use Case and UML diagrams</li>
-                <li>Designed wireframes for product tracking and reporting screens</li>
-            </ul>
-            
-            <div style="margin-top: 20px;">
-                <a href="https://github.com/dineshsnikam/ManagePro" class="btn" target="_blank">View Project Files</a>
-            </div>
-        `
-    }
-};
-
+            'coffee-shop': {
+                title: 'Coffee Shop Sales Analysis',
+                content: `
+                    <h3>Project Overview</h3>
+                    <p>Comprehensive analysis of coffee shop sales data to uncover customer behavior patterns, product performance metrics, and seasonal sales trends.</p>
+                    
+                    <h3>My Role</h3>
+                    <p>As a Business Analyst | Data Analyst & Developer, I was responsible for gathering requirements, analyzing data, and creating visualizations.</p>
+                    
+                    <h3>Key Work</h3>
+                    <ul>
+                        <li>Prepared BA documentation including Project Charter, BRD, FRD, Use Case Diagrams, ERD, and Workflow to clearly define business and functional requirements</li>
+                        <li>Performed data analysis on coffee shop sales to uncover customer behavior, product performance, and seasonal sales trends</li>
+                        <li>Developed an interactive Excel dashboard with KPIs, charts, and slicers, providing real-time decision-making insights</li>
+                    </ul>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/dineshsnikam/Coffee-Shop-Sales-Analysis" class="btn" target="_blank">View Documentation</a>
+                    </div>
+                `
+            },
+            'smart-medico': {
+                title: 'Smart Medico – Hospital Management System Analysis',
+                content: `
+                    <h3>Project Overview</h3>
+                    <p>Comprehensive hospital management system analysis to address fragmented data and improve decision-making processes.</p>
+                    
+                    <h3>My Role</h3>
+                    <p>As a Business Analyst | Data Analyst & Developer, I was responsible for requirements gathering, documentation, and dashboard development.</p>
+                    
+                    <h3>Key Work</h3>
+                    <ul>
+                        <li>Prepared BA documentation (Project Charter, BRD, FRD, Use Cases, ERD, Workflow, Data Requirement Document)</li>
+                        <li>Defined the problem of fragmented hospital data and proposed a unified dashboard for real-time decision-making</li>
+                        <li>Gathered and analyzed requirements from stakeholders (Management, Finance, Doctors, IT/BI Team)</li>
+                        <li>Built an interactive Power BI dashboard with KPIs (Patients, Doctors, Billing, Payments, Disease Trends) for actionable insights</li>
+                    </ul>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/dineshsnikam/Smart-Medico-Hospital-Management-System" class="btn" target="_blank">View Documentation</a>
+                    </div>
+                `
+            },
+            'code-builder': {
+                title: 'Code Builder - Online Learning Platform',
+                content: `
+                    <h3>Project Overview</h3>
+                    <p>Online code execution platform for learners to practice and enhance their programming skills through guided exercises.</p>
+                    
+                    <h3>My Role</h3>
+                    <p>As a Business Analyst & Developer, I was responsible for gathering requirements, creating system architecture, and developing prototypes.</p>
+                    
+                    <h3>Key Work</h3>
+                    <ul>
+                        <li>Gathered requirements and performed feasibility analysis</li>
+                        <li>Designed system architecture with UML diagrams</li>
+                        <li>Built functional prototypes for validation</li>
+                        <li>Documented full SRS and deployment model</li>
+                    </ul>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="https://drive.google.com/drive/folders/1LHo5Q9v5VIRVJ_ksJFQWSRtpODqw4GfI?usp=sharing" class="btn" target="_blank">View Documentation</a>
+                    </div>
+                `
+            }
+        };
+        
         projectDetailBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -2589,4 +2730,5 @@
         });
     </script>
 </body>
-</html>
+ 
+</html>  
