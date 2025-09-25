@@ -77,10 +77,11 @@
     
     /* Header & Navigation */
     header {
-        background-color: var(--white);
+        background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
         box-shadow: var(--shadow);
         position: fixed;
         width: 100%;
+        height: 60px; 
         top: 0;
         z-index: 1000;
         transition: background-color 0.3s ease;
@@ -429,14 +430,15 @@
     
     .hero-image img {
         width: 100%;
+        height: 100%;
         border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+/*        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);*/
         transition: var(--transition);
     }
     
     .hero-image:hover img {
         transform: scale(1.03);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+/*        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);*/
     }
     
     .hero-image::before {
@@ -447,7 +449,7 @@
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        background: radial-gradient(circle at center, transparent 0%, rgba(255, 152, 0, 0.2) 100%);
+/*        background: radial-gradient(circle at center, transparent 0%, rgba(255, 152, 0, 0.2) 100%);*/
         opacity: 0;
         transition: opacity 0.3s ease;
         z-index: 1;
@@ -1916,7 +1918,7 @@
                     <p>Connecting business needs with technical solutions through strategic analysis and innovative thinking.</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn">Get in Touch</a>
-                        <a href="https://drive.google.com/uc?export=download&id=1j23B5favaREFvQmBKjbqKU1oljtMmomt" class="btn btn-outline" target="_blank">Download Resume</a>
+                        <a href="#" class="btn btn-outline" target="_blank">Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -1937,8 +1939,8 @@
                     <img src="https://z-cdn-media.chatglm.cn/files/12ea4a95-daa6-4804-976e-5d4534b663a9_WhatsApp%20Image%202025-09-02%20at%2012.15.01%20PM.jpeg?auth_key=1788335560-018ff8e542e94660ac8becf677d61fc0-0-016c11a80f40e6b5b0ff116272f1987d" alt="Dinesh Nikam">
                 </div>
                 <div class="about-text">
-                    <h3>Business Analyst with Technical Expertise</h3>
-                    <p>I am a Business Analyst with an MBA in IT specializing in Software Development. I possess a solid foundation in Economics and am proficient in requirements gathering, documentation, and process analysis.</p>
+                    <h3>Business Analyst & Data Analyst with Technical Expertise</h3>
+                    <p>I am a Business Analyst and Data Analystwith an MBA in IT specializing in Software Development. I possess a solid foundation in Economics and am proficient in requirements gathering, documentation, and process analysis.</p>
                     <p>My experience includes working closely with stakeholders and developers to bridge business needs with technical solutions, while excelling in analytical thinking, communication, and problem-solving.</p>
                     <p>With a unique combination of business acumen and technical understanding, I excel at translating complex business requirements into actionable technical specifications and solutions.</p>
                     <div class="about-skills">
@@ -2448,7 +2450,7 @@
         
         // Typing Animation
         const typingTexts = [
-            "Business Analyst | Developer | Problem Solver",
+            "Business Analyst | Data Analyst | MIS | Developer | Problem Solver",
             "Requirement Analysis | Process Modeling | Technical Solutions",
             "Stakeholder Engagement | System Design | Project Management"
         ];
